@@ -1,3 +1,11 @@
+@import 'index.scss';
+
 .App {
-    background-color: red;
+    margin-top: 35%;
+}
+
+.quote-box {
+    background-color: $box-background;
+    border-radius: 15px;
+    padding: 5%;
 }
