@@ -1,11 +1,66 @@
 @import 'index.scss';
 
 .App {
-    margin-top: 35%;
+    .quote-box{
+        background-color: $box-background;
+        border: 2px solid $letter-icon-background;
+        border-radius: 15px;
+        color: $letter-icon-background;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+
+        .text {
+            font-weight: bold;
+        }
+
+        .author {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .btn-light {
+            background-color: $letter-icon-background;
+            color: $icon-color;
+            margin: 2px auto;
+            width: 35%;
+        }
+
+        .footer .footer-content {
+            display: flex;
+            font-size: small;
+            justify-content: center;
+            margin: 0;
+            padding: 2px;
+        }
+    }
 }
 
-.quote-box {
-    background-color: $box-background;
-    border-radius: 15px;
-    padding: 5%;
+@media (max-width: 1007px) {
+    .App {
+        .quote-box {     
+            .btn-light {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .App {
+        .quote-box {
+            .text, .author {
+                font-size: small;
+            }
+        
+            .btn-light {
+                width: 65%;
+            }
+        
+            .footer .footer-content {
+                font-size: smaller;
+            }
+        }
+    }   
+    
 }

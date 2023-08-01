@@ -37,10 +37,12 @@ function QuoteMachine() {
     <div id="quote-box" className='quote-box'>
       <p id="text" className='text'>"{content}"</p>
       <p id="author" className='author'>- {author}</p>
-      <button id="new-quote" className='new-quote' onClick={handleNewQuote}>New Quote</button>
-      <a href="twitter.com/intent/tweet" id="tweet-quote" className='tweet-quote'><i className="fa-brands fa-twitter"></i></a>
+      <button id="new-quote" className='btn btn-light' onClick={handleNewQuote}>New Quote</button>
+      <a href="https://twitter.com/intent/tweet" target='_blank' rel='noreferrer' id="tweet-quote" className='tweet-quote btn btn-light'>
+        Tweet
+      </a>
       <footer className='footer'>
-        <p className='footer-content'>by ABdev</p>
+        <p className='footer-content'>by Agustina Beg-Gut</p>
       </footer>
     </div>
   );
