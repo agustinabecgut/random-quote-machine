@@ -1,11 +1,15 @@
+import { HashRouter } from 'react-router-dom';
 import QuoteMachine from './components/QuoteMachine';
 import './App.scss'
 
 function App() {
   return (
-    <div className="App">
-      <QuoteMachine />
-    </div>
+    <HashRouter>
+      <div className="App">
+        <QuoteMachine />
+      </div>
+    </HashRouter>
+    
   );
 }
 
